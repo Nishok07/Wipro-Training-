@@ -1,0 +1,23 @@
+public class Solution {
+
+	public static void main(String[] args){
+		int Palindrome(int num)
+		{
+			int rem, sum = 0;
+			int temp = num;
+			while(num > 0)
+			{
+			  rem = num % 10;
+			  sum = sum * 10 + rem;
+			  num = num / 10;
+			}	
+			if(temp == sum)
+			{
+				return 2;
+			}
+			else {
+			return 1;
+			}
+		}
+		
+	}	
