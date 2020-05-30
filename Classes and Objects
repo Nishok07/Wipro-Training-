@@ -1,0 +1,22 @@
+// Calculator //
+import java.lang.Math;
+
+public class Calculator {
+	static int powerInt( int num1, int num2 ) {
+		return (int) Math.pow( num1, num2 );
+	}
+	static double powerDouble( double num1, int num2 ) {
+		return Math.pow( num1, num2 );
+	}
+	public static void main(String[] args) {
+		int pow1 = Calculator.powerInt( 2, 3 );
+		double pow2 = Calculator.powerDouble( 2, 3 );
+		System.out.println( pow1 );
+		System.out.println( pow2 );
+	}
+}
+
+Output :
+8
+8.0
+
