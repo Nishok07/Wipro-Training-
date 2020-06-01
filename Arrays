@@ -89,8 +89,32 @@ public class sortArray {
 Output :
 [2, 7, 11, 19, 24, 99]
 
+// Reverse an array //
+public class reverseArray {
+	static void revArray(int[] a) {
+		int n = a.length;
+		int b[] = new int[n];
+		int j = n;
+		for ( int i = 0; i < n; i++) {
+			b[ j - 1 ] = a[i];
+			j = j - 1;
+		}
+		for (int k = 0; k < n; k++) { 
+                    System.out.println(b[k]); 
+                } 
+	}
 
+	public static void main(String[] args) {
+		int[] a = { 1, 2, 3, 4 };
+		revArray(a);
+	}
+}
 
+Output :
+4
+3
+2
+1
 
 
 
