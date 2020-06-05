@@ -25,3 +25,16 @@ class lastDigit{
               return num % 10;
      }
 }
+
+// Sum of last digits of two numbers //
+public class sumLastDigits {
+	static int sumDigits(int ip1, int ip2) {
+		int num1 = ip1 % 10;
+		int num2 = ip2 % 10;
+		int result = num1 + num2;
+		return result;
+	}
+	public static void main(String[] args) {
+		sumDigits(117,24);
+	}
+}
